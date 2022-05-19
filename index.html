@@ -59,17 +59,46 @@
                 
             </div>
             <!-- Feed -->
-            <div class="feed flex-1 bg-slate-100 rounded-md rounded-tr-none z-20 p-8" >
+            <div class="feed flex-1 bg-slate-100 rounded-md rounded-tr-none z-20 p-8 pt-4" >
                 <!-- Title -->
-                <div class="feed__title text-xs">
+                <div class="feed__title text-sm">
                     Lorem ipsum
                 </div>
                 <!-- Content -->
-                <div class="feed__content flex mt-8 space-x-12">
-                    <div class="form bg-white border h-80 flex-1 shadow-lg rounded-md">
+                <div class="feed__content flex mt-4 space-x-8 pr-10">
+                    <!-- Nueva pre-alerta -->
+                    <div class="form bg-white border h-80 flex-1 md:basis-[42%] shadow-lg rounded-lg">
+
+                        <form class='pt-10 px-10 pr-14 flex flex-col space-y-5' action="">
+                            <div class="form__title">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span class="text-md font-semibold">Nueva pre-alerta</span>
+                            </div>
+                            <input  class="border p-4 py-3 rounded-md text-xs"
+                                    type="text" name="" id="" placeholder="Tienda de procedencia">
+
+                            <div class="form__select-group flex items-baseline space-x-2">
+                                <select class="border p-4 py-3 rounded-md text-xs flex-1" name="" id="">
+                                    <option value="">Empresa de envío</option>
+                                    <option value="">Empresa de envío 2</option>
+                                    <option value="">Empresa de envío 3</option>
+                                    <option value="">Empresa de envío 4</option>
+                                </select>
+                                <!-- Valor del paquete -->
+                                <div class="flex items-center">
+                                    <div class="border p-1 py-2">
+                                        <i class="fa-solid text-xs fa-dollar-sign"></i>
+                                    </div>
+                                    <span class="flex-1 p-1 py-3 border text-xs" >Valor del paquete</span>
+                                </div>
+                            </div>
+
+                        </form>
 
                     </div>
-                    <div class="alerts bg-red-500 border h-80 flex-1 border-blue-600"></div>
+
+
+                    <div class="alerts bg-white border h-80 flex-1 md:basis-[58%] shadow-lg rounded-lg"></div>
                 </div>
 
             </div>
