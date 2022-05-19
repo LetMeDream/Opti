@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizing</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/927d2efc62.js" crossorigin="anonymous"></script>
+</head>
+<body class="relative h-full">
+    <!-- Background role -->
+    <div 
+        style="clip-path: polygon(0% 72%,32% 0%,100% 0%,100% 100%,0% 100%);" 
+        class="m min-h-screen h-full bg-[#303454] absolute min-w-full -z-10"
+    >
+    </div>
+    <!-- Actual flex content -->
+    <div class="relative top-10">
+        <!-- Navbar -->
+        <div class="nav flex justify-end text space-x-2 items-center py-4 pr-24 px-2 bg-white">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="nav__notifications">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <span class="t text-orange-400 font-semibold">235.4789 pts</span>
+            <div class="nav__user">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <span class="text-blue-700 cursor-pointer">Leonardo Rojas</span>
+                <i class="fa-solid fa-chevron-down cursor-pointer text-blue-700"></i>
+            </div>
+        </div>
+        <!-- Newsfeed -->
+        <div class="flex space-x-1">
+            <!-- Menu -->
+            <div class="menu flex flex-col z-20 list-none text-blue-900 text-sm font-bold" >
+
+                <li class="p-2 px-6 hover:bg-blue-100 cursor-pointer border-l-2 border-transparent hover:border-blue-900 transition-all ease-in">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home
+                    </a>
+                </li>
+                <li class="p-2 px-6 bg-blue-100 cursor-pointer border-l-2 border-blue-900 transition-all ease-in">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <a href="#">Lorem ipsum</a>
+                </li>
+                <li class="p-2 px-6 hover:bg-blue-100 cursor-pointer border-l-2 border-transparent hover:border-blue-900 transition-all ease-in">
+                    <i class="fa-solid fa-map-location"></i>
+                    <a href="#">Lorem ipsum</a>
+                </li>
+                <li class="p-2 px-6 hover:bg-blue-100 cursor-pointer border-l-2 border-transparent hover:border-blue-900 transition-all ease-in">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <a href="#">Lorem ipsum</a>
+                </li>
+                <li class="p-2 px-6 hover:bg-blue-100 cursor-pointer border-l-2 border-transparent hover:border-blue-900 transition-all ease-in">
+                    <i class="fa-solid fa-box-open"></i>
+                    <a href="#">Lorem ipsum</a>
+                </li>
+                
+            </div>
+            <!-- Feed -->
+            <div class="feed flex-1 bg-slate-100 rounded-md rounded-tr-none z-20 p-8" >
+                <!-- Title -->
+                <div class="feed__title text-xs">
+                    Lorem ipsum
+                </div>
+                <!-- Content -->
+                <div class="feed__content flex mt-8 space-x-12">
+                    <div class="form bg-white border h-80 flex-1 shadow-lg rounded-md">
+
+                    </div>
+                    <div class="alerts bg-red-500 border h-80 flex-1 border-blue-600"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
