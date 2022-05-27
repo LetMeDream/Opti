@@ -2179,6 +2179,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-\[\#ff1c1c\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 28 28 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2627,12 +2632,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:basis-\[42\%\] {
     flex-basis: 42%;
   }
 
   .md\:basis-\[58\%\] {
     flex-basis: 58%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 }
 

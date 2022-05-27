@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimizing</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/927d2efc62.js" crossorigin="anonymous"></script>
 </head>
 <body class="relative">
@@ -13,11 +13,11 @@
     <div 
         id="background"
         style="clip-path: polygon(0% 72%,32% 0%,100% 0%,100% 100%,0% 100%);" 
-        class="m min-h-[704px] bg-[#303454] absolute min-w-full -z-10"
+        class="m min-h-[704px] bg-[#303454] absolute min-w-full -z-10 hidden md:block"
     >
     </div>
     <div
-        class="bg-[#303454] h-1/4 absolute -bottom-10 w-full"  
+        class="bg-[#303454] h-1/4 absolute -bottom-10 w-full hidden md:block"  
     >
 
     </div>
@@ -39,7 +39,7 @@
         <!-- Newsfeed -->
         <div class="flex space-x-1">
             <!-- Menu -->
-            <div class="menu flex flex-col z-20 list-none text-blue-900 text-sm font-bold" >
+            <div class="menu hidden md:flex flex-col z-20 list-none text-blue-900 text-sm font-bold  " >
 
                 <li class="p-2 px-6 hover:bg-blue-100 cursor-pointer border-l-2 border-transparent hover:border-blue-900 transition-all ease-in">
                     <i class="fa-solid fa-house"></i>
@@ -71,7 +71,7 @@
                     Lorem ipsum
                 </div>
                 <!-- Content -->
-                <div class="feed__content flex mt-4 space-x-8 pr-10">
+                <div class="feed__content flex flex-col md:flex-row mt-4 space-x-8 pr-10">
                     <!-- Nueva pre-alerta (FORMULARIO) -->
                     <div class="form bg-white border md:basis-[42%] shadow-lg rounded-lg">
 
@@ -137,7 +137,7 @@
                                 *El tipo de envío lo podras modificar por medio de <br>
                                 <span class="text-gray-500">
                                     una 
-                                    <a href="#">Solicitud especial</a> 
+                                    <a class="underline text-[#ff1c1c]" href="#">Solicitud especial</a> 
                                     desde tu almacén.
                                 </span>
                             </div>
